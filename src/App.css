@@ -1,0 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Bai Jamjuree", sans-serif;
+    background-color: #F3F7FD;
+}
+/* thi css is for the banner image at the home page to spin. See the banner component of home page line 57  */
+ @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
