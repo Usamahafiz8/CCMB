@@ -1,7 +1,8 @@
 import { Grid, Stack, Typography, styled } from "@mui/material";
-import Buttons from "../../../components/MUI/Buttons";
+import Buttons from "../../../../components/MUI/Buttons";
 import SectionTwo from "./SectionTwo";
-const GridStyled = styled(Grid)(({ theme }) => ({
+import useWindowWidth from "../../../../hook/useWindowWidth";
+const GridStyled = styled(Grid)(({  }) => ({
   minHeight: "500px",
   backgroundImage: `url(https://images.unsplash.com/photo-1488998527040-85054a85150e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
   backgroundRepeat: "no-repeat",
@@ -12,6 +13,8 @@ const GridStyled = styled(Grid)(({ theme }) => ({
   alignItems: "center",
 }));
 function MedicalBilling() {
+  const windowWidth = useWindowWidth();
+
   return (
     <Grid container justifyContent={"center"} alignItems={"center"}>
       <GridStyled item xs={12}>
@@ -22,10 +25,10 @@ function MedicalBilling() {
           direction={"column"}
           gap={3}
         >
-          <Typography color={"black"} fontWeight={600} variant={"h2"}>
+          <Typography color={"black"} style={{textAlign: "center"}} fontWeight={600} variant={windowWidth < 900 ? "h3" : "h2"}>
             Provider Enrollment Services
           </Typography>
-          <Typography fontWeight={500} variant={"body1"}>
+          <Typography fontWeight={500} style={{textAlign: "center"}} variant={"body1"}>
             Auto Paladium is the first impression & the final touch of any event
           </Typography>
           <Buttons>Request a Call</Buttons>
@@ -42,7 +45,7 @@ function MedicalBilling() {
         <Stack
           justifyContent={"center"}
           alignItems={"center"}
-          sx={{ width: "60%", height: "100%", paddingBlock: 8 }}
+          sx={{ width: { xs: '90%', sm: '90%', md: '60%' },  height: "100%", paddingBlock: 8 }}
           direction={"column"}
           gap={2}
         >

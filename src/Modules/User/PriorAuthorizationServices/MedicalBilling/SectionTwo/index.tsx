@@ -1,4 +1,4 @@
-import { Grid, Stack, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography } from "@mui/material";
 import ImageOne from "../../../../assets/Services/picOne.png";
 function SectionTwo() {
   const listData = [
@@ -9,7 +9,7 @@ function SectionTwo() {
     "Other Special Events",
   ];
   return (
-    <Grid container sx={{mb:10}}>
+    <Grid container sx={{ mb: 10 }}>
       <Grid
         item
         display={"flex"}
@@ -17,7 +17,17 @@ function SectionTwo() {
         alignItems={"center"}
         xs={6}
       >
-        <img style={{ width: "80%" }} src={ImageOne} alt="" />
+        <Box
+          component="img"
+          sx={{
+            width: '80%',
+            '@media (max-width:900px)': {
+              width: '100%',
+            },
+          }}
+          src={ImageOne}
+          alt=""
+        />
       </Grid>
       <Grid item xs={6}>
         <Stack direction={"column"} gap={2}>
@@ -29,7 +39,7 @@ function SectionTwo() {
             Valet parking for your special event is the mark of a gracious host,
             but more often than not is a necessity. Valet parking can:
           </Typography>
-          <ul style={{marginLeft:"20px"}}>
+          <ul style={{ marginLeft: "20px" }}>
             {listData.map((e, i) => (
               <li key={i}>{e}</li>
             ))}

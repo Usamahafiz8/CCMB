@@ -1,6 +1,7 @@
 import { Grid, Stack, Typography, styled } from "@mui/material";
 import Buttons from "../../../components/MUI/Buttons";
 import ServicesCommon from "../../../components/ServicesCommon";
+import useWindowWidth from "../../../hook/useWindowWidth";
 // import ImageBg from "../../../assets/Services/banner.png";
 const GridStyled = styled(Grid)(({ theme }) => ({
   minHeight: "500px",
@@ -13,6 +14,7 @@ const GridStyled = styled(Grid)(({ theme }) => ({
   alignItems: "center",
 }));
 function Services() {
+  const windowWidth = useWindowWidth();
   return (
     <Grid container justifyContent={"center"} alignItems={"center"}>
       <GridStyled item xs={12}>
@@ -23,10 +25,10 @@ function Services() {
           direction={"column"}
           gap={3}
         >
-          <Typography color={"black"} fontWeight={600} variant={"h2"}>
+          <Typography color={"black"} fontWeight={600} variant={ windowWidth < 900 ? "h3" : "h2"}>
             Our Services
           </Typography>
-          <Typography fontWeight={500} textAlign={"center"} variant={"body1"}>
+          <Typography fontWeight={500} textAlign={"center"} variant={windowWidth < 900 ? "body2" : "body1"}>
             Auto Paladium is the first impression & the final touch of any event
           </Typography>
           <Buttons>Request a Call</Buttons>

@@ -8,10 +8,10 @@ function Contact() {
       <Grid
         item
         xs={11}
-        sx={{ height: "400px", p: 3 }}
+        sx={{ height: "300px", p: 3 }}
         display={"flex"}
         flexDirection={"column"}
-        justifyContent={"center"}
+        justifyContent={"start"}
         alignItems={"center"}
         gap={2}
       >
@@ -19,11 +19,11 @@ function Contact() {
           Book A Call
         </Typography>
         <Typography fontWeight={600} variant={"h4"}>Contact Us</Typography>
-        <Typography variant={"body2"}>
+        <Typography variant={"body2"} align="center">
           Let us help with you with any of your questions and how we operate.
         </Typography>
       </Grid>
-      <Grid item sx={{ mt: -6, pb:6 }} width={"95%"} xs={11}>
+      <Grid item sx={{ mt: -14 , pb:6 }} width={"95%"} xs={11}>
         <Grid container rowGap={2} alignItems={"stretch"}>
           <Grid item xs={12} md={6}>
             <BrightMedicalBillingCard />

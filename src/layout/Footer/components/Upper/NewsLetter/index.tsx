@@ -1,5 +1,6 @@
 import { Facebook, Instagram, LinkedIn } from "@mui/icons-material";
-import { Grid, Stack, TextField, Typography, styled } from "@mui/material";
+import { Grid, IconButton, Stack, TextField, Typography, styled } from "@mui/material";
+import { facebookUrl , instagramUrl , linkedinUrl } from "../../../../Navbar/components/UpperNav/SocialMediaUrls";
 const WhiteBorderTextField = styled(TextField)({
   "& label.Mui-focused": {
     color: "white",
@@ -36,9 +37,15 @@ function NewsLetter() {
         </Stack>
       </Grid>
       <Grid item display={"flex"} alignItems={"center"} gap={2} xs={12}>
-        <Facebook />
-        <Instagram />
-        <LinkedIn />
+      <IconButton href={facebookUrl} target="_blank" aria-label="Facebook">
+          <Facebook sx={{ color: "white" }} />
+        </IconButton>
+        <IconButton href={instagramUrl} target="_blank" aria-label="Instagram">
+          <Instagram sx={{ color: "white" }} />
+        </IconButton>
+        <IconButton href={linkedinUrl} target="_blank" aria-label="LinkedIn">
+          <LinkedIn sx={{ color: "white" }} />
+        </IconButton>
       </Grid>
     </Grid>
   );

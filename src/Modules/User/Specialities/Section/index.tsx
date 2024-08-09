@@ -16,7 +16,9 @@ function Section() {
         <Stack
           justifyContent={"center"}
           alignItems={"center"}
-          sx={{ width: "70%", height: "100%" }}
+          sx={{  width: "70%", height: "100%" ,  '@media (max-width: 900px)': {
+            width: '90%', // Width for screens larger than 900px
+          },}}
           direction={"column"}
           gap={3}
         >
@@ -29,9 +31,7 @@ function Section() {
             Our Specialities
           </Typography>
           <Typography textAlign={"center"} fontWeight={500} variant={"body1"}>
-            As a psychologist and a cognitive behavioral therapist, I have
-            worked with hundreds of patients and understand the intricacies of
-            various psychological issues that people face.
+          As a medical billing specialist, We have managed the billing and coding processes for hundreds of patients, ensuring accurate and efficient handling of various insurance claims and payments.
           </Typography>
         </Stack>
       </Grid>
