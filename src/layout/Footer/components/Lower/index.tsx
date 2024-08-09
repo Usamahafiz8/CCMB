@@ -31,7 +31,7 @@ function Lower() {
       width={"100%"}
       gap={windowWidth < 900 ? 4 : 0}
     >
-      <Typography variant="body2">Copyright Satyam Studio</Typography>
+      <Typography variant="body2">Copyright Calim Crest Medical Billing</Typography>
       {DataArray.map((e, i) => (
         <Stack direction={"row"} alignItems={"center"} gap={1}>
           {e.icon}
