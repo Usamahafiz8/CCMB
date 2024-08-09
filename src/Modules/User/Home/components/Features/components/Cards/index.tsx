@@ -25,11 +25,11 @@ function Cards({ CardsData }: any) {
             {CardsData.para}
           </Typography>
         </Grid>
-        <Grid item xs={12}>
-          <Buttons backgroundBtn={"#F3F7FD"} colorBtn={"black"} fullWidth>
-            Actions
-          </Buttons>
-        </Grid>
+        {/* <Grid item xs={12}> */}
+          {/* <Buttons backgroundBtn={"#F3F7FD"} colorBtn={"black"} fullWidth> */}
+            {/* Actions */}
+          {/* </Buttons> */}
+        {/* </Grid> */}
       </Grid>
     </Card>
   );

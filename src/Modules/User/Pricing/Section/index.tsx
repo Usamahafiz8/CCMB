@@ -88,11 +88,32 @@ function Section() {
           </Typography>
         </Stack>
       </Grid>
-      {DataCards?.map((e, i) => (
+      <Grid
+        item
+        display={"flex"}
+        justifyContent={"center"}
+        alignItems={"center"}
+        xs={12}
+      >
+        <Stack
+          justifyContent={"center"}
+          alignItems={"center"}
+          sx={{ width: "70%", height: "100%" , marginTop:"15px"}}
+          direction={"column"}
+          gap={3}
+        >
+          <Typography textAlign={"center"} fontWeight={500} variant={"body1"}>
+            For Pricing Contact Us on the Email : <b>
+               hr@@claimcrestmb@gmail.com
+              </b>
+          </Typography>
+        </Stack>
+      </Grid>
+      {/* {DataCards?.map((e, i) => (
         <Grid item key={i} xs={12} md={6} lg={4}>
           <Cards cardsData={e} />
         </Grid>
-      ))}
+      ))} */}
     </GridStyled>
   );
 }

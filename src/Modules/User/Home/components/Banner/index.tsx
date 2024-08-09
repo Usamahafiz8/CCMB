@@ -95,7 +95,7 @@ function Banner() {
               fontWeight={500}
               variant={windowWidth < 1200 ? "h4" : "h2"}
             >
-              Bright Medical
+              Claim Crest
             </Typography>
             <Typography
               textAlign={windowWidth < 1200 ? "center" : "left"}
@@ -104,7 +104,7 @@ function Banner() {
               variant={windowWidth < 1200 ? "h4" : "h2"}
             
             >
-              Billing
+              Medical Billing
             </Typography>
             <Typography
               textAlign={windowWidth < 1200 ? "center" : "left"}
