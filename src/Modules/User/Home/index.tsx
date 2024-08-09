@@ -6,15 +6,18 @@ import Features from "./components/Features";
 import Gallery from "./components/Gallery";
 import Benefits from "./components/Benefits";
 import MissionVision from "./components/MissionVision";
+import useWindowWidth from "../../../hook/useWindowWidth";
 
 function Home() {
+  const windowWidth = useWindowWidth();
+
   return (
     <Grid
       sx={{ mb: 8 }}
       container
       justifyContent={"center"}
       alignItems={"center"}
-      gap={12}
+      gap={windowWidth < 1200 ? 4 : 12}
     >
       <Grid item xs={12}>
         <Banner />

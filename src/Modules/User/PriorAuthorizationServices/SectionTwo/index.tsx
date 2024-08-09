@@ -1,8 +1,8 @@
-import { Grid, Stack, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography } from "@mui/material";
 import ImageOne from "../../../../assets/Services/picOne.png";
 function SectionTwo() {
   return (
-    <Grid container sx={{mb:10}} rowGap={4}>
+    <Grid container sx={{ mb: 10 }} rowGap={4}>
       <Grid
         item
         display={"flex"}
@@ -11,7 +11,17 @@ function SectionTwo() {
         md={6}
         xs={12}
       >
-        <img style={{ width: "80%" }} src={ImageOne} alt="" />
+        <Box
+          component="img"
+          sx={{
+            width: '80%',
+            '@media (max-width:900px)': {
+              width: '100%',
+            },
+          }}
+          src={ImageOne}
+          alt=""
+        />
       </Grid>
       <Grid item md={6} xs={12}>
         <Stack direction={"column"} gap={2}>
@@ -24,7 +34,7 @@ function SectionTwo() {
           </Typography>
           <Typography width={"90%"} variant={"body1"}>
             Prior authorization is usually required if you need a complex treatment or prescription.
-Coverage will not happen without it. That’s why beginning the prior authorization process early is important. Our Experts are here to get the prior authorization
+            Coverage will not happen without it. That’s why beginning the prior authorization process early is important. Our Experts are here to get the prior authorization
           </Typography>
           <Typography width={"90%"} variant={"body1"}>
             done so you don’t must do the messy work and can deal with your patients in a smooth and timely manner.

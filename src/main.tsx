@@ -9,7 +9,9 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
       <ThemeProvider theme={light}>
+        <div style={{maxWidth : "2000px" , margin: "auto"}} >
         <App />
+        </div>
       </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>

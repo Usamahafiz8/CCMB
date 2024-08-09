@@ -12,9 +12,7 @@ function ServicesCommon() {
       </Grid>
       <Grid item xs={12}>
         <Typography variant={"body2"} textAlign={"center"}>
-          As a psychologist and a cognitive behavioral therapist, I have worked
-          with hundreds of patients and understand the intricacies of various
-          psychological issues that people face.
+        As a medical billing specialist, we have managed the billing and coding processes for hundreds of patients, ensuring accurate and efficient handling of various insurance claims and payments.
         </Typography>
       </Grid>
       <Grid item xs={12}>

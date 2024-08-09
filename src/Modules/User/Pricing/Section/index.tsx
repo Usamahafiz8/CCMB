@@ -48,7 +48,7 @@ function Section() {
     },
   ];
   return (
-    <GridStyled container rowGap={4}>
+    <GridStyled container rowGap={2}>
       <Grid
         item
         display={"flex"}
@@ -59,7 +59,7 @@ function Section() {
         <Stack
           justifyContent={"center"}
           alignItems={"center"}
-          sx={{ width: "70%", height: "100%" }}
+          sx={{ width: { xs: '90%', sm: '90%', md: '70%' },  height: "100%" }}
           direction={"column"}
           gap={3}
         >

@@ -1,18 +1,18 @@
 import { Grid } from "@mui/material";
 import Cards from "../Cards";
 import ImageOne from "../../../../../../../assets/Home/Photos/imageOne.png";
-import ImageTwo from "../../../../../../../assets/Home/Photos/imageTwo.png";
-import ImageThree from "../../../../../../../assets/Home/Photos/imageThree.png";
+import ImageOne1 from "../../../../../../../assets/Home/Banner/medicalBillingBanner3.jfif";
+import ImageThree from "../../../../../../../assets/Home/Banner/medicalBillingBanner.webp";
 import ImageFour from "../../../../../../../assets/Home/Photos/imageFour.png";
-import ImageFive from "../../../../../../../assets/Home/Photos/imageFive.png";
-import ImageSix from "../../../../../../../assets/Home/Photos/imageSix.png";
+import ImageFive from "../../../../../../../assets/Home/Banner/medicalBilling.webp";
+import ImageSix from "../../../../../../../assets/Home/Photos/imageSix.jfif"
 function CardsGrid() {
   const ArrayData = [
     {
       img: ImageOne,
     },
     {
-      img: ImageTwo,
+      img: ImageOne1,
     },
     {
       img: ImageThree,

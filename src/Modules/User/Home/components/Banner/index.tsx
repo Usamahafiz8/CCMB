@@ -1,10 +1,15 @@
-import { Grid, Stack, Typography, styled } from "@mui/material";
+import { Grid , Stack, Typography, styled } from "@mui/material";
 import ImageBg from "../../../../../assets/Banner.png";
 import ImageCircle from "../../../../../assets/BannerCircle.svg";
 import ImageGirl from "../../../../../assets/Banner2.png";
-import DentistSvg from "../../../../../assets/Home/Banner/professionalDentists.svg";
-import TopLevelSvg from "../../../../../assets/Home/Banner/topLevel.svg";
-import ServicesSvg from "../../../../../assets/Home/Banner/professionalServices.svg";
+// import DentistSvg from "../../../../../assets/Home/Banner/professionalDentists.svg";
+import medicalBilling from "../../../../../assets/Home/Banner/medicalBilling.webp";
+import medicalBillingBanner from "../../../../../assets/Home/Banner/medicalBillingBanner.webp";
+import medicalBillingBanner3 from "../../../../../assets/Home/Banner/medicalBillingBanner3.jfif";
+
+
+// import TopLevelSvg from "../../../../../assets/Home/Banner/topLevel.svg";
+// import ServicesSvg from "../../../../../assets/Home/Banner/professionalServices.svg";
 import Buttons from "../../../../../components/MUI/Buttons";
 import useWindowWidth from "../../../../../hook/useWindowWidth";
 import { useNavigate } from "react-router";
@@ -25,16 +30,16 @@ function Banner() {
   const navigate = useNavigate();
   const ArrayData: ArrayData[] = [
     {
-      title: "Professional Dentist",
-      icon: DentistSvg,
+      title: "Expert Medical Billing",
+      icon: medicalBilling,
     },
     {
-      title: "Top Level Doctor",
-      icon: TopLevelSvg,
+      title: "Premier Billing Solutions",
+      icon: medicalBillingBanner,
     },
     {
-      title: "Professional Services",
-      icon: ServicesSvg,
+      title: "Professional Billing Services",
+      icon: medicalBillingBanner3,
     },
   ];
   return (
@@ -52,6 +57,7 @@ function Banner() {
           height: "110%",
           top: "0%",
           animation: "spin 60s linear infinite",
+          display: windowWidth < 1200 ? "none" : "block",
         }}
         alt=""
       />
@@ -72,13 +78,13 @@ function Banner() {
             alignItems={windowWidth < 1200 ? "center" : "flex-start"}
             gap={3}
             sx={{
-              ml: windowWidth < 1200 ? 5 : 0,
-              mt: windowWidth < 1200 ? 3 : 0,
+              // ml: windowWidth < 1200 ? 5 : 0,
+              // mt: windowWidth < 1200 ? 3 : 0,
             }}
           >
             <Typography
               textAlign={windowWidth < 1200 ? "center" : "left"}
-              variant={"h3"}
+              variant={windowWidth < 1200 ? "h4" : "h3"}
               fontWeight={600}
               color={"primary.main"}
             >
@@ -87,7 +93,7 @@ function Banner() {
             <Typography
               textAlign={windowWidth < 1200 ? "center" : "left"}
               fontWeight={500}
-              variant={"h2"}
+              variant={windowWidth < 1200 ? "h4" : "h2"}
             >
               Bright Medical
             </Typography>
@@ -95,14 +101,15 @@ function Banner() {
               textAlign={windowWidth < 1200 ? "center" : "left"}
               fontWeight={500}
               sx={{ mt: -4 }}
-              variant={"h2"}
+              variant={windowWidth < 1200 ? "h4" : "h2"}
+            
             >
               Billing
             </Typography>
             <Typography
               textAlign={windowWidth < 1200 ? "center" : "left"}
-              variant={"caption"}
-              width={"40%"}
+              variant={windowWidth < 1200 ? "body1" : "caption"}
+              width={windowWidth < 1200 ? "80%" : "40%"}
             >
               We Redefine the status of the medical billing industry by offering
               seamless Revenue Cycle Management Services, Let’s get your net
@@ -133,14 +140,14 @@ function Banner() {
               alignItems={"center"}
               gap={1}
             >
-              <img width={"40px"} src={e.icon} alt="" />
+              <img width={"60px"} style={{ borderRadius: "100%" }} src={e.icon} alt="" />
               <Typography variant={"body1"} fontWeight={600}>
                 {e.title}
               </Typography>
             </Stack>
           ))}
         </Stack>
-      </Grid>
+      </Grid> 
     </GridStyled>
   );
 }
