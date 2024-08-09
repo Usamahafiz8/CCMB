@@ -102,7 +102,7 @@ function Section() {
           direction={"column"}
           gap={3}
         >
-          <Typography textAlign={"center"} fontWeight={500} variant={"body1"}>
+          <Typography textAlign={"center"} style={{cursor: "pointer" }} fontWeight={500} variant={"body1"}>
             For Pricing Contact Us on the Email : <b>
                hr@@claimcrestmb@gmail.com
               </b>

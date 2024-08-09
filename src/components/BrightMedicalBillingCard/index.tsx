@@ -5,7 +5,7 @@ function BrightMedicalBillingCard() {
     <Card sx={{ paddingBlock: 3, paddingInline: 2, height:"100%" }}>
       <Stack direction={"column"} justifyContent={"flex-start"} gap={2}>
         <Typography color={"primary.main"} fontWeight={600} variant={"h4"}>
-          Claim Creat Billing
+          Claim Crest Medical Billing
         </Typography>
         <Typography variant={"body2"}>
           G-2,G-3, (GROUND FLOOR) BTI Centara Grand. 144, 144/1, Green Road USA
