@@ -42,7 +42,7 @@ function Specialities() {
           <Typography textAlign={"center"} width={"95%"} fontWeight={500} variant={"body1"}>
             Auto Paladium is the first impression & the final touch of any event
           </Typography>
-          <Buttons>Request a Call</Buttons>
+          <Buttons>Request a Demo</Buttons>
         </Stack>
       </GridStyled>
       <Grid item paddingBlock={4} xs={12}>

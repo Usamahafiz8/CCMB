@@ -25,10 +25,10 @@ function Contact() {
       </Grid>
       <Grid item sx={{ mt: -14 , pb:6 }} width={"95%"} xs={11}>
         <Grid container rowGap={2} alignItems={"stretch"}>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={4}>
             <BrightMedicalBillingCard />
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={8}>
             <ContactUs />
           </Grid>
         </Grid>

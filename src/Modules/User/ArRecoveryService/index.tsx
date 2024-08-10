@@ -1,6 +1,7 @@
 import { Grid, Stack, Typography, styled } from "@mui/material";
 import Buttons from "../../../components/MUI/Buttons";
 import SectionTwo from "./SectionTwo";
+import { useNavigate } from "react-router";
 import useWindowWidth from "../../../hook/useWindowWidth";
 const GridStyled = styled(Grid)(({ theme }) => ({
   minHeight: "500px",
@@ -12,7 +13,9 @@ const GridStyled = styled(Grid)(({ theme }) => ({
   justifyContent: "center",
   alignItems: "center",
 }));
+
 function ArRecoveryService() {
+const navigate = useNavigate()
   const windowWidth = useWindowWidth();
   return (
     <Grid container justifyContent={"center"} alignItems={"center"}>
@@ -30,7 +33,8 @@ function ArRecoveryService() {
           <Typography fontWeight={500} style={{textAlign: "center"}} variant={"body1"}>
             Auto Paladium is the first impression & the final touch of any event
           </Typography>
-          <Buttons>Request a Call</Buttons>
+          <Buttons onClick={()=>navigate("/contact") }
+          >Request a Demo</Buttons>
         </Stack>
       </GridStyled>
       <Grid

@@ -22,9 +22,9 @@ function Home() {
       <Grid item xs={12}>
         <Banner />
       </Grid>
-      <Grid item sx={{ mt: -14, zIndex: "3" }} xs={11}>
+      {/* <Grid item sx={{ mt: -14, zIndex: "3" }} xs={11}>
         <BillingsCards />
-      </Grid>
+      </Grid> */}
       <Grid item xs={11}>
         <Services />
       </Grid>

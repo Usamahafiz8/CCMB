@@ -11,7 +11,7 @@ function Lower() {
   const windowWidth = useWindowWidth();
   const DataArray: ContactInfo[] = [
     {
-      title: "8819 Ohio St. South Gate, CA 90280",
+      title: "7900 4th St N STE 300ST Petersburg, FL , USA",
       icon: <LocationCity />,
     },
     {
@@ -19,7 +19,7 @@ function Lower() {
       icon: <Mail />,
     },
     {
-      title: "+1 30000000000",
+      title: "+1 786-633-2030",
       icon: <Call />,
     },
   ];

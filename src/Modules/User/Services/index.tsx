@@ -31,7 +31,7 @@ function Services() {
           <Typography fontWeight={500} textAlign={"center"} variant={windowWidth < 900 ? "body2" : "body1"}>
             Auto Paladium is the first impression & the final touch of any event
           </Typography>
-          <Buttons>Request a Call</Buttons>
+          <Buttons>Request a Demo</Buttons>
         </Stack>
       </GridStyled>
       <Grid item xs={11} sx={{ paddingBlock: 6 }}>

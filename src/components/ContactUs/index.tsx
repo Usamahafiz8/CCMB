@@ -1,10 +1,10 @@
-import { Card, Grid, Typography } from "@mui/material";
+import { Card, Grid, Stack, Typography } from "@mui/material";
 import light from "../../theme/theme";
 import Form from "./Form";
 
 function ContactUs() {
   return (
-    <Card sx={{ height: "100%" }}>
+    // <Card sx={{ height: "100%" }}>
       <Grid
         sx={{
           paddingBlock: 3,
@@ -24,7 +24,7 @@ function ContactUs() {
           <Form />
         </Grid>
       </Grid>
-    </Card>
+    // </Card>
   );
 }
 
