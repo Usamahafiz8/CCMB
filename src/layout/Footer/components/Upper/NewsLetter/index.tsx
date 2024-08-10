@@ -28,14 +28,14 @@ function NewsLetter() {
     <Grid container gap={5}>
       <Grid item xs={12}>
         <Typography variant={"body2"} fontWeight={600}>
-          Join a NewsLetter
+          Connect to SocialMedia 
         </Typography>
       </Grid>
-      <Grid item xs={12}>
+      {/* <Grid item xs={12}>
         <Stack direction={"row"}>
           <WhiteBorderTextField label="Your Email" />
         </Stack>
-      </Grid>
+      </Grid> */}
       <Grid item display={"flex"} alignItems={"center"} gap={2} xs={12}>
       <IconButton href={facebookUrl} target="_blank" aria-label="Facebook">
           <Facebook sx={{ color: "white" }} />

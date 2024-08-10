@@ -128,11 +128,8 @@ const ContactForm: React.FC = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <Typography variant="h4" gutterBottom>
-        Contact Us
-      </Typography>
-      <Grid container spacing={3}>
-        <Grid item xs={12} lg={6}>
+      <Grid container spacing={1}>
+        <Grid item xs={12} lg={12}>
           <TextField
             name="name"
             label="Name"
@@ -147,7 +144,7 @@ const ContactForm: React.FC = () => {
             onChange={handleChange}
           />
         </Grid>
-        <Grid item xs={12} lg={6}>
+        <Grid item xs={12} lg={12}>
           <TextField
             name="email"
             label="Email"
@@ -162,7 +159,7 @@ const ContactForm: React.FC = () => {
             onChange={handleChange}
           />
         </Grid>
-        <Grid item xs={12} lg={6}>
+        <Grid item xs={12} lg={12}>
           <TextField
             name="number"
             label="Phone Number"
@@ -177,7 +174,8 @@ const ContactForm: React.FC = () => {
             onChange={handleChange}
             />
         </Grid>
-        <Grid item xs={12} lg={6}>
+
+        {/* <Grid item xs={12} lg={6}>
           <LocalizationProvider dateAdapter={AdapterDayjs}>
             <DatePicker
               label="Preferred Contact Date"
@@ -199,7 +197,7 @@ const ContactForm: React.FC = () => {
                 InputProps={{ style: { color: "black", background: "white" } }}
             />
           </LocalizationProvider>
-        </Grid>
+        </Grid> */}
         <Grid item xs={12}>
           <TextField
             name="help"

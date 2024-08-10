@@ -16,17 +16,17 @@ const DataArrayOne = [
 
 const DataArrayTwo = [
   {
-    title: "Facebook",
+    // title: "Facebook",
     url: facebookUrl,
     icon: <Facebook sx={{ color: "white" }} />,
   },
+  // {
+    // title: "Instagram",
+    // url: instagramUrl,
+    // icon: <Instagram sx={{ color: "white" }} />,
+  // },
   {
-    title: "Instagram",
-    url: instagramUrl,
-    icon: <Instagram sx={{ color: "white" }} />,
-  },
-  {
-    title: "LinkedIn",
+    // title: "LinkedIn",
     url: linkedinUrl,
     icon: <LinkedIn sx={{ color: "white" }} />,
   },
@@ -64,14 +64,14 @@ function UpperNav() {
           </React.Fragment>
         ))}
       </Grid>
-      <Grid item xs={5} display={"flex"} flexDirection={"row"} gap={2} paddingInline={2} justifyContent={"flex-end"}>
+      <Grid item xs={5} display={"flex"} flexDirection={"row"} gap={1} paddingInline={2} justifyContent={"flex-end"}>
         {DataArrayTwo?.map((e, i) => (
           <React.Fragment key={i}>
             <LinkWrapper href={e.url} target="_blank" rel="noopener noreferrer">
               {e?.icon}
-              <Typography color={"white"} variant={"caption"} fontWeight={500}>
-                {e?.title}
-              </Typography>
+              {/* <Typography color={"white"} variant={"caption"} fontWeight={500}> */}
+                {/* {e?.title} */}
+              {/* </Typography> */}
             </LinkWrapper>
             <Divider orientation="vertical" flexItem />
           </React.Fragment>

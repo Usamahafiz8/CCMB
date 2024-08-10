@@ -15,7 +15,7 @@ function Lower() {
       icon: <LocationCity />,
     },
     {
-      title: "ourstudio@email.com",
+      title: "info@claimcrestmb.com",
       icon: <Mail />,
     },
     {
