@@ -40,9 +40,9 @@ function NewsLetter() {
       <IconButton href={facebookUrl} target="_blank" aria-label="Facebook">
           <Facebook sx={{ color: "white" }} />
         </IconButton>
-        <IconButton href={instagramUrl} target="_blank" aria-label="Instagram">
+        {/* <IconButton href={instagramUrl} target="_blank" aria-label="Instagram">
           <Instagram sx={{ color: "white" }} />
-        </IconButton>
+        </IconButton> */}
         <IconButton href={linkedinUrl} target="_blank" aria-label="LinkedIn">
           <LinkedIn sx={{ color: "white" }} />
         </IconButton>
