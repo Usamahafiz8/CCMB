@@ -31,7 +31,7 @@ function MedicalBilling() {
           <Typography fontWeight={500} style={{textAlign: "center"}} variant={"body1"}>
             Auto Paladium is the first impression & the final touch of any event
           </Typography>
-          <Buttons>Request a Demo</Buttons>
+          <Buttons onClick={()=>{naviaget("/demo")}}>Request a Demo</Buttons>
         </Stack>
       </GridStyled>
       <Grid

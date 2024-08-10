@@ -129,7 +129,7 @@ function Banner() {
         <Stack
           sx={{ display: windowWidth < 1200 ? "none" : "flex" }}
           direction={"column"}
-          paddingLeft={12}
+          paddingLeft={40}
           gap={2}
         >
           {ArrayData.map((e, i) => (

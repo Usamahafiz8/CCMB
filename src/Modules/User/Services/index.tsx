@@ -2,6 +2,7 @@ import { Grid, Stack, Typography, styled } from "@mui/material";
 import Buttons from "../../../components/MUI/Buttons";
 import ServicesCommon from "../../../components/ServicesCommon";
 import useWindowWidth from "../../../hook/useWindowWidth";
+import { useNavigate } from "react-router";
 // import ImageBg from "../../../assets/Services/banner.png";
 const GridStyled = styled(Grid)(({ theme }) => ({
   minHeight: "500px",
@@ -15,6 +16,7 @@ const GridStyled = styled(Grid)(({ theme }) => ({
 }));
 function Services() {
   const windowWidth = useWindowWidth();
+  const naviaget =  useNavigate()
   return (
     <Grid container justifyContent={"center"} alignItems={"center"}>
       <GridStyled item xs={12}>
@@ -31,7 +33,7 @@ function Services() {
           <Typography fontWeight={500} textAlign={"center"} variant={windowWidth < 900 ? "body2" : "body1"}>
             Auto Paladium is the first impression & the final touch of any event
           </Typography>
-          <Buttons>Request a Demo</Buttons>
+          <Buttons onClick={()=>{naviaget("/demo")}}>Request a Demo</Buttons>
         </Stack>
       </GridStyled>
       <Grid item xs={11} sx={{ paddingBlock: 6 }}>

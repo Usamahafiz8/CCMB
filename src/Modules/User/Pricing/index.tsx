@@ -2,6 +2,7 @@ import { Grid, Stack, Typography, styled } from "@mui/material";
 import Buttons from "../../../components/MUI/Buttons";
 import Section from "./Section";
 import useWindowWidth from "../../../hook/useWindowWidth";
+import { useNavigate } from "react-router";
 const GridStyled = styled(Grid)(({ theme }) => ({
   minHeight: "500px",
   backgroundImage: `url(https://cdn.pixabay.com/photo/2015/07/10/20/54/stethoscope-840125_1280.jpg)`,
@@ -14,6 +15,8 @@ const GridStyled = styled(Grid)(({ theme }) => ({
 }));
 function Pricing() {
   const windowWidth = useWindowWidth();
+
+  const naviaget = useNavigate()
 
   return (
     <Grid container justifyContent={"center"} alignItems={"center"}>
@@ -43,7 +46,7 @@ function Pricing() {
           >
             Auto Paladium is the first impression & the final touch of any event
           </Typography>
-          <Buttons>Request a Demo</Buttons>
+          <Buttons onClick={()=>{naviaget("/demo")}}>Request a Demo</Buttons>
         </Stack>
       </GridStyled>
       <Grid item xs={12}>

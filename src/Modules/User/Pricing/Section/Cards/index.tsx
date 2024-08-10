@@ -34,12 +34,18 @@ function Cards({ cardsData }: any) {
             <li key={i}>{e}</li>
           ))}
         </ul>
-        <Typography
-          sx={{ paddingInline: 2, paddingBottom: 2 }}
+        {/* <Typography
           variant={"body2"}
-        >
+          >
           Get Started
-        </Typography>
+          </Typography> */}
+<Typography 
+          sx={{ paddingInline: 2, paddingBottom: 2 }}
+style={{cursor: "pointer" }} fontWeight={500} variant={"body1"}>
+            For pricing email us: <b>
+               info@claimcrestmb.com
+              </b>
+          </Typography>
       </Stack>
     </Card>
   );

@@ -5,7 +5,9 @@ import { Outlet } from "react-router-dom";
 import useWindowWidth from "../hook/useWindowWidth";
 import ResponsiveNavbar from "./Navbar/components/ResponsiveNavbar";
 import FloatingButtons from "../components/MUI/FloatingButtons";
-import { Chat } from "@mui/icons-material";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
+import LogoSvg from "../assets/Logo.svg";
+
 
 function Layout() {
   const windowWidth = useWindowWidth();
@@ -21,7 +23,12 @@ function Layout() {
         <Footer />
       </Grid>
       <Grid item style={{ position: "sticky", bottom: 30, display:"flex", justifyContent:"flex-end", alignItems:"center",zIndex:"12" }} xs={12}>
-        <FloatingButtons sx={{mr:4, zIndex:"12"}} ><Chat/></FloatingButtons>
+        
+          <FloatingWhatsApp phoneNumber={"+92 345 5124451"} accountName={"CLaim Crest MB"} avatar={LogoSvg} statusMessage={"online"}/>
+        {/* <FloatingButtons sx={{mr:4, zIndex:"12"}} > */}
+          {/* <Chat/> */}
+          {/* </FloatingButtons> */}
+
       </Grid>
     </Grid>
   );

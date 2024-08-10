@@ -43,6 +43,7 @@ function Content() {
       <Grid item xs={12}>
         <Buttons>See Full Biography</Buttons>
       </Grid>
+      {/* 
       <Grid item marginTop={3} xs={12}>
         <Typography variant={"h5"} fontWeight={600}>
           Follow Me On Social Media
@@ -54,11 +55,11 @@ function Content() {
           alignItems={"flex-start"}
           gap={2}
         >
-          <Buttons>Facebook</Buttons>
-          <Buttons backgroundBtn="#CD201F">Youtube</Buttons>
+          <Buttons >Facebook</Buttons>
+          <Buttons backgroundBtn="#CD201F">Youtube</Buttons> 
           <Buttons>Linkedin</Buttons>
         </Stack>
-      </Grid>
+      </Grid> */}
     </Grid>
   );
 }

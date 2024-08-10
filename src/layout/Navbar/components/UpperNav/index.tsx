@@ -5,7 +5,7 @@ import React from "react";
 
 const DataArrayOne = [
   {
-    title: "Call For Serial:+1 786-633-2030",
+    title: "Call back: +1 786-633-2030",
     icons: <Call sx={{ color: "white" }} />,
   },
   {

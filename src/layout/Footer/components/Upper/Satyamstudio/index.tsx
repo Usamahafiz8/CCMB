@@ -10,9 +10,7 @@ function Satyamstudio() {
         </Typography>
       </Stack>
       <Typography variant={"caption"}>
-        OurStudio is a digital agency UI / UX Design and Website Development
-        located in Ohio, United States of America
-      </Typography>
+        CCMB is a medical billing company that provides comprehensive medical billing services across the USA. As an LLC, we specialize in managing and optimizing the billing process for healthcare providers, ensuring accurate and timely reimbursements.</Typography>
       <Typography fontWeight={600} variant={"body2"}>
         Copyright Calim Crest Medical Billing
       </Typography>
