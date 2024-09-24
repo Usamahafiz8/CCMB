@@ -30,7 +30,7 @@ function SectionTwo() {
           </Typography>
           <Typography width={{ xs: '100%', md: '90%' }} variant={"h4"}>AR Recover Services</Typography>
           <Typography width={{ xs: '100%', md: '90%' }} variant={"body1"}>
-            Bright Health Care solutions have professional AR recovery team, we make sure every old claim gets processed correctly for maximum payments.
+            Claim Crest Medical Billingsolutions have professional AR recovery team, we make sure every old claim gets processed correctly for maximum payments.
             Accounts Receivable (AR) is the money owed to Providers or medical billing companies for the medical care rendered to patients.
           </Typography>
           <Typography width={{ xs: '100%', md: '90%' }} variant={"body1"}>

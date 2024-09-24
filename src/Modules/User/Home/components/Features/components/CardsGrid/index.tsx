@@ -28,7 +28,7 @@ function CardsGrid() {
     {
       img: ImageFour,
       title: "Follow-up",
-      para: "For any denial, BellMedex’s A/R specialists will take swift and effective action to ensure reimbursements, keeping you up-to-date on appeals.",
+      para: "For any denial, Claim Crest Medical Billing A/R specialists will take swift and effective action to ensure reimbursements, keeping you up-to-date on appeals.",
     },
     {
       img: ImageFive,

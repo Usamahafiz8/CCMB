@@ -30,7 +30,7 @@ function SectionTwo() {
           </Typography>
           <Typography width={"90%"} variant={"h4"}>Prior Authorization Services</Typography>
           <Typography width={"90%"} variant={"body1"}>
-            Bright Health Care Solutions provide prior authorization services as our goal is to get your work burden reduced by leaving all the hectic work to our experts.
+            Claim Crest Medical BillingSolutions provide prior authorization services as our goal is to get your work burden reduced by leaving all the hectic work to our experts.
           </Typography>
           <Typography width={"90%"} variant={"body1"}>
             Prior authorization is usually required if you need a complex treatment or prescription.

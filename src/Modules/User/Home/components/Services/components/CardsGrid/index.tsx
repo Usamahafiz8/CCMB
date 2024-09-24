@@ -13,26 +13,30 @@ function CardsGrid() {
     {
       imgOne: MainOne,
       imgTwo: MainSvgOne,
+      url: '/authorizationservices',
       title: "Prior Authorization Services",
-      para: "Bright Health Care Solutions provide prior authorization services as our goal is to get ...",
+      para: "Claim Crest Medical Billing Solutions offers comprehensive prior authorization services to ensure timely approvals for necessary medical treatments. Our expert team works diligently to navigate the complex insurance requirements, reducing delays and ensuring your patients receive the care they need without administrative hassles.",
     },
     {
       imgOne: MainTwo,
       imgTwo: MainSvgTwo,
+      url: '/medicalbilling',
       title: "Medical Billing Services",
-      para: "A knowledgeable medical biller can optimize revenue performance for the physician practice or healthcare… ",
+      para: "Our experienced medical billing specialists optimize revenue performance for healthcare providers by accurately processing claims and reducing denials. We utilize advanced billing techniques and stay up-to-date with industry regulations, ensuring your practice maximizes reimbursement while maintaining compliance with all healthcare billing standards.",
     },
     {
       imgOne: MainThree,
       imgTwo: MainSvgThree,
+      url: '/recoveryservice',
       title: "AR Recovery Services",
-      para: "Bright Health Care solutions have a professional AR recovery team, we make sure every old claim gets…",
+      para: "Claim Crest Medical Billing Solutions has a dedicated AR recovery team focused on ensuring every outstanding claim is resolved efficiently. We specialize in recovering aged accounts receivable, minimizing write-offs, and improving your cash flow, enabling your practice to maintain financial stability and profitability.",
     },
     {
       imgOne: MainFour,
       imgTwo: MainSvgFour,
+      url: '/enrollment',
       title: "Provider Enrollment Services",
-      para: "Contact us for your Medicare or Commercial payer enrollments with our payer contracting experts…",
+      para: "Our provider enrollment services streamline the enrollment process for Medicare and commercial payers, allowing you to focus on patient care. Our contracting experts handle all aspects of the enrollment, from application submission to follow-up, ensuring your practice is credentialed quickly and efficiently.",
     },
   ];
   return (
